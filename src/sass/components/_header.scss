@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #000000;
+  font-size: 24;
+}
+
+.header__menu {
+  display: flex;
+  display: none;
+}
+
+.header__menu-list {
+  display: flex;
+}
+
+.burger-menu {
+  width: 34px;
+  padding: 7px 0;
+}
+
+.burger-menu__element {
+  height: 4px;
+  background-color: #39515e;
+}
+
+.burger-menu__element:last-child {
+  width: 70%;
+}
+
+.burger-menu__element:not(:last-child) {
+  margin-bottom: 5px;
+}

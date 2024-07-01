@@ -1,8 +1,11 @@
-@import './common';
-@import './header';
-@import './hero';
-@import './skills.scss';
-@import './about';
-@import './pricing';
-@import './contact';
-@import './footer';
+@import './utils/base';
+@import './utils/variables.scss';
+@import './utils/common';
+
+@import './components/header';
+@import './components/hero';
+@import './components/skills.scss';
+@import './components/about';
+@import './components/pricing';
+@import './components/contact';
+@import './components/footer';
