@@ -8,12 +8,12 @@ p {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--base-font);
 }
 
 body.modal-open {
@@ -27,42 +27,39 @@ ul {
 }
 
 img {
-}
-
-address {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.section {
-  outline: 1px solid red;
+.link {
+  text-decoration: none;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   padding: 0 15px;
   outline: 1px solid green;
-  width: 320px;
 
-  // @media screen and ( max-width: 767px){
-  //   max-width: 320px;
+  @media screen and (min-width: 575px) {
+    width: 575px;
+    padding: 0 33px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1378px;
+    padding: 0 21px;
+  }
+}
 
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
-  // @media screen and ( min-width: 768px){
-  //   max-width: 768px;
-
-  //   padding-left: 32px;
-  //   padding-right: 32px;
-  // }
-
-  // @media screen and ( min-width: 1200px){
-  //   min-width: 1200px;
-
-  //   padding-left: 15px;
-  //   padding-right: 16px;
-  // }
+.btn {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  color: #fff;
+  background: var(--base-dark);
 }

@@ -1,21 +1,38 @@
-<section>
+<section class="section hero">
   <div class="container">
-    <h1>Learn Any Foreign Language</h1>
-    <p>
-      With our teachers who write a program for each student, you will be able
-      to make your first sketch after the first lesson.
-    </p>
-    <button type="button">Get started</button>
+    <div class="description">
+      <h1 class="title">Learn Any Foreign Language</h1>
+      <p class="text">
+        With our teachers who write a program for each student, you will be able
+        to make your first sketch after the first lesson.
+      </p>
+      <button type="button" class="btn">Get started</button>
+    </div>
     <picture>
       <source
-        media="(min-resolution: 192dpi)"
-        srcset="./images/hero/learning-languages@2x.png 2x"
+        srcset="
+          ./images/hero/Learning-languages.png    1x,
+          ./images/hero/Learning-languages@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/Learning-languages768.png    1x,
+          ./images/hero/Learning-languages768@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/Learning-languages320.png    1x,
+          ./images/hero/Learning-languages320@2x.png 2x
+        "
       />
       <img
-        src="./images/hero/learning-languages.png"
-        alt=""
-        height="510"
-        width="654"
+        src="./images/hero/Learning-languages320.png"
+        alt="foto"
+        class="image"
       />
     </picture>
   </div>
