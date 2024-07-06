@@ -63,3 +63,15 @@ img {
   color: #fff;
   background: var(--base-dark);
 }
+
+.breaker::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+    display: block;
+    // width: 200px;
+    // height: 1px;
+    // background-color: tomato;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}

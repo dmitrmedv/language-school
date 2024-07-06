@@ -1,12 +1,11 @@
 .skills .title {
+  font-weight: 600;
   font-size: 24px;
+  line-height: 3.33333;
   color: var(--base-title-color);
   text-align: center;
-  padding-top: 30px;
-  margin-bottom: 64px;
 
   @media screen and (min-width: 768px) {
-    font-weight: 600;
     font-size: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -15,53 +14,111 @@
 }
 
 .skills-list {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 21px;
-  align-items: center;
+  gap: 20px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: start;
-    gap: 10px;
+    align-items: flex-start;
+    gap: calc((697px - 672px) / 2);
   }
   @media screen and (min-width: 1200px) {
+    gap: 29px;
   }
-}
-
-.skills-list:first-child {
-  flex-grow: 1;
 }
 
 .skills .item {
+  display: flex;
+  flex-direction: column;
   padding: 8px 16px 8px 16px;
   border-radius: 5px;
-  width: 100%;
   background: var(--base-gray);
   @media screen and (min-width: 768px) {
-    padding: 31px 10px 31px 10px;
+    border-radius: 10px;
+    padding: 30px 14px;
     width: 224px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 32px 18px 32px 18px;
+    padding: 32px 18px;
     width: 426px;
   }
 }
 
+.skills .item:last-child {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 461px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 881px;
+  }
+}
+
+.skills .item:last-child .sub-title {
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+.skills .item:last-child .description {
+  @media screen and (min-width: 768px) {
+    width: 260px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 320px;
+  }
+}
+
 .skills .image {
-  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .skills .sub-title {
   font-weight: 600;
   font-size: 18px;
+  line-height: 4.44444;
   color: var(--base-dark);
-
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 30px;
+    line-height: 1.5;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills .text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.447;
+  color: var(--base-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: 1.6456;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
   }
 }
 
@@ -71,36 +128,24 @@
   height: 50px;
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: 45px;
+  margin-top: 30px;
+  margin-bottom: 37px;
   @media screen and (min-width: 768px) {
     width: 178px;
     height: 50px;
     font-size: 16px;
-    margin-bottom: 45px;
+    margin-bottom: 7px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 20px;
     border-radius: 10px;
     width: 218px;
     height: 60px;
-    margin-bottom: 45px;
   }
 }
 
-.text-box {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 18px;
-  margin-bottom: 32px;
-}
-
-.skills .text {
-  font-weight: 400;
-  font-size: 13px;
-  color: var(--base-text-color);
-
+.skills .item:first-child .btn {
   @media screen and (min-width: 1200px) {
-    font-size: 16px;
+    margin-bottom: 119px;
   }
 }
