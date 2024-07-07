@@ -30,10 +30,15 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  // outline: 1px solid black;
 }
 
 .link {
   text-decoration: none;
+}
+
+.section {
+  outline: 1px solid red;
 }
 
 .container {
@@ -41,18 +46,13 @@ img {
   margin-right: auto;
   padding: 0 15px;
   outline: 1px solid green;
-
-  @media screen and (min-width: 575px) {
-    width: 575px;
-    padding: 0 33px;
-  }
   @media screen and (min-width: 768px) {
-    width: 727px;
+    width: 720px;
     padding: 0 15px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1400px) {
     width: 1378px;
-    padding: 0 21px;
+    padding: 0 20px;
   }
 }
 
@@ -68,10 +68,7 @@ img {
   @media screen and (min-width: 768px) {
     content: '';
     display: block;
-    // width: 200px;
-    // height: 1px;
-    // background-color: tomato;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1400px) {
   }
 }
