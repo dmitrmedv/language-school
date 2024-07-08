@@ -20,6 +20,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -30,7 +34,8 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  outline: 1px solid black;
+  // outline: 1px solid black;
+  text-align: center;
 }
 
 .link {
@@ -39,6 +44,13 @@ img {
 
 .section {
   outline: 1px solid red;
+  padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 65px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-bottom: 180px;
+  }
 }
 
 .container {
@@ -53,6 +65,24 @@ img {
   @media screen and (min-width: 1400px) {
     width: 1378px;
     padding: 0 20px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33333;
+  text-align: center;
+  color: var(--base-title-color);
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 267%;
+    margin-bottom: 37px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 60px;
   }
 }
 
