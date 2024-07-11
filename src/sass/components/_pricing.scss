@@ -1,0 +1,111 @@
+.pricing .list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1400px) {
+  }
+}
+
+.pricing .item {
+  // outline: 1px solid red;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    // padding: 0 10px;
+    text-align: start;
+    width: 224px;
+  }
+  @media screen and (min-width: 1400px) {
+    text-align: start;
+    width: 426px;
+  }
+}
+
+.pricing .sub-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: var(--base-dark);
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 1400px) {
+    flex: 0;
+    font-size: 30px;
+    line-height: 1.6;
+    text-transform: capitalize;
+  }
+}
+
+.pricing .text {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--base-text-color);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    flex: 1;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  width: 170px;
+  height: 37px;
+  background: #eee;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 205px;
+    height: 45px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 260px;
+    height: 45px;
+    margin: 0;
+  }
+}
+
+.price {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--base-dark);
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 24px;
+  }
+}
+
+.period {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--second-price-color);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+  }
+}
