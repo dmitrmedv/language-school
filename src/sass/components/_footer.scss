@@ -1,0 +1,82 @@
+.footer .container {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 48px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-top: 22px;
+    padding-bottom: 77px;
+  }
+}
+
+.footer .container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1400px) {
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1400px) {
+    gap: 80px;
+  }
+}
+
+.footer-list .link {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--base-text-color);
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.footer-list .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-list .item:not(:last-child)::after {
+  display: block;
+  content: '';
+  margin: 0 3px 0 3px;
+  width: 3px;
+  height: 3px;
+  background-color: var(--base-text-color);
+  border-radius: 50%;
+  @media screen and (min-width: 1400px) {
+    content: '';
+    display: none;
+  }
+}

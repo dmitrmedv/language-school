@@ -1,1 +1,39 @@
-
+<section class="section contact">
+  <div class="container">
+    <h2 class="title mobile">Contact Us</h2>
+    <picture>
+      <source
+        srcset="
+          ./images/contact/contact.png    1x,
+          ./images/contact/contact@2x.png 2x
+        "
+        media="(min-width: 1400px)"
+      />
+      <source
+        srcset="
+          ./images/contact/contact768.png    1x,
+          ./images/contact/contact768@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/contact/contact320.png    1x,
+          ./images/contact/contact320@2x.png 2x
+        "
+      />
+      <img src="./images/contact/contact320.png" alt="foto" class="image" />
+    </picture>
+    <div class="discription">
+      <h2 class="title tablet">Contact Us</h2>
+      <p class="text">
+        Discover your current English level by taking our free online English
+        test. Sign up to our newsletter for learning tips and free resource
+      </p>
+      <form class="form">
+        <input type="email" placeholder="Enter Your E-mail" />
+        <button class="btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>

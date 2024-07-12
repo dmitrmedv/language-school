@@ -42,10 +42,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  margin: 108px 0 33px 0;
   text-align: center;
-  width: 292px;
-  margin-top: 108px;
-  margin-bottom: 33px;
   color: var(--base-text-color);
   @media screen and (min-width: 768px) {
     font-weight: 300;
@@ -70,15 +68,16 @@
   height: 60px;
   border-radius: 5px;
   color: #fff;
-  text-align: center;
   font-weight: 400;
   font-size: 16px;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     width: 236px;
     height: 65px;
     font-weight: 300;
     font-size: 18px;
+    margin: 0;
   }
   @media screen and (min-width: 1400px) {
     width: 426px;
