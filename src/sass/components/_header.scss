@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 33px;
   padding-bottom: 33px;
   @media screen and (min-width: 768px) {
@@ -12,7 +13,6 @@
 }
 
 .header .container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,8 +45,7 @@
   gap: 4px;
   width: 33px;
   cursor: pointer;
-  display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1400px) {
     display: none;
   }
 }
@@ -59,7 +58,7 @@
 }
 
 .close-btn {
-  //   display: none;
+  // display: none;
   cursor: pointer;
   fill: var(--menu-btn-color);
   @media screen and (min-width: 575px) {
@@ -79,11 +78,14 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 320px;
-  // padding: 0 15px 0 15px;
-  display: none;
+  height: 100vh;
+  outline: 1px solid red;
+  background-color: #fff;
+  padding: 0 15px 0 15px;
+  // display: none;
   @media screen and (min-width: 575px) {
     // padding: 0 33px 0 33px;
   }
@@ -166,4 +168,26 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
+}
+
+.menu .head {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.menu .head::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+  position: absolute;
+  // left: 0;
+  bottom: -32px;
+  // @media screen and (min-width: 1400px) {
+  //   display: none;
+  // }
 }
