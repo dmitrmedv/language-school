@@ -1,3 +1,26 @@
+.skills.section {
+  padding-bottom: 50px;
+}
+
+.skills .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 333%;
+  color: var(--base-title-color);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 267%;
+    margin-bottom: 37px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 60px;
+  }
+}
+
 .skills-list {
   position: relative;
   display: flex;
@@ -55,6 +78,7 @@
 }
 
 .skills .description {
+  // flex: 1;
   margin-top: 20px;
   @media screen and (min-width: 768px) {
   }
@@ -72,6 +96,11 @@
   }
 }
 
+.skills .image {
+  @media screen and (min-width: 768px) {
+  }
+}
+
 .skills .sub-title {
   font-weight: 600;
   font-size: 18px;
@@ -83,6 +112,8 @@
   }
   @media screen and (min-width: 1400px) {
     font-size: 30px;
+    margin-top: 24px;
+    margin-bottom: 32px;
   }
 }
 
@@ -95,16 +126,17 @@
 
 .skills .item:first-child .text-box {
   @media screen and (min-width: 768px) {
-    margin-bottom: 118px;
+    margin-bottom: 55px;
   }
   @media screen and (min-width: 1400px) {
-    margin-bottom: 278px;
   }
 }
 
 .skills .item:last-child .text-box {
+  @media screen and (min-width: 768px) {
+    // padding: 0;
+  }
   @media screen and (min-width: 1400px) {
-    margin-bottom: 85px;
   }
 }
 

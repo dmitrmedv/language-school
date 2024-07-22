@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   padding-top: 33px;
   padding-bottom: 33px;
   @media screen and (min-width: 768px) {
@@ -13,6 +12,8 @@
 }
 
 .header .container {
+  outline: 1px solid blue;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,17 +76,17 @@
 }
 
 .menu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  width: 320px;
-  height: 100vh;
-  outline: 1px solid red;
-  background-color: #fff;
-  padding: 0 15px 0 15px;
-  // display: none;
+  // position: absolute;
+  // display: flex;
+  // flex-direction: column;
+  // top: 0;
+  // left: 0;
+  // width: 320px;
+  // height: 100vh;
+  // outline: 1px solid red;
+  // background-color: #fff;
+  // padding: 0 15px 0 15px;
+  display: none;
   @media screen and (min-width: 575px) {
     // padding: 0 33px 0 33px;
   }
@@ -170,7 +171,41 @@
   }
 }
 
-.menu .head {
+.overlay {
+  // display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(7, 34, 47, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media screen and (min-width: 575px) {
+  }
+  @media screen and (min-width: 1400px) {
+  }
+}
+
+.mobile-menu {
+  outline: 1px solid green;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media screen and (min-width: 575px) {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+}
+
+.mobile-menu .head {
+  outline: 1px solid red;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -178,7 +213,7 @@
   padding-top: 32px;
 }
 
-.menu .head::after {
+.mobile-menu .head::after {
   content: '';
   display: block;
   width: 100%;
