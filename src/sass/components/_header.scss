@@ -172,16 +172,19 @@
 }
 
 .overlay {
+  overflow: hidden;
+  z-index: 2;
   // display: none;
   width: 100%;
   height: 100vh;
   background: rgba(7, 34, 47, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   @media screen and (min-width: 575px) {
   }
   @media screen and (min-width: 1400px) {
+    display: none;
   }
 }
 
