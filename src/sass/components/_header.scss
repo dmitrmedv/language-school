@@ -12,7 +12,6 @@
 }
 
 .header .container {
-  outline: 1px solid blue;
   position: relative;
   display: flex;
   align-items: center;
@@ -83,8 +82,7 @@
   // left: 0;
   // width: 320px;
   // height: 100vh;
-  // outline: 1px solid red;
-  // background-color: #fff;
+  //   // background-color: #fff;
   // padding: 0 15px 0 15px;
   display: none;
   @media screen and (min-width: 575px) {
@@ -188,7 +186,6 @@
 }
 
 .mobile-menu {
-  outline: 1px solid green;
   width: 100%;
   height: 100vh;
   background: #fff;
@@ -207,7 +204,6 @@
 }
 
 .mobile-menu .head {
-  outline: 1px solid red;
   display: flex;
   position: relative;
   justify-content: space-between;
