@@ -1,0 +1,2 @@
+const e=document.querySelector(".burger-menu"),t=document.querySelector(".close-btn"),n=document.querySelector(".overlay"),c=document.querySelector(".mobile-menu");function i(){n.classList.remove("hidden"),t.addEventListener("click",r),c.addEventListener("click",r)}function r(e){e.target.classList.contains("link")&&c.removeEventListener("click",r),n.classList.add("hidden"),t.removeEventListener("click",i)}e.addEventListener("click",i);
+//# sourceMappingURL=index.cd8af528.js.map
